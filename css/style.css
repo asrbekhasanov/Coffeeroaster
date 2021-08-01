@@ -280,6 +280,7 @@ img {
 
 .because__list__description {
     text-align: center;
+    margin: 0;
 }
 
 /* instructions section */
@@ -307,6 +308,31 @@ img {
 
 .instruction__item {
     width: 255px;
+}
+
+.instruction__item::before {
+    width: 31px;
+    height: 31px;
+    display: inline-block;
+    content: '';
+    border: 2px solid #0E8784;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-bottom: -19px;
+}
+
+.instruction__number::before {
+    width: 130%;
+    height: 2px;
+    display: inline-block;
+    content: '';
+    background-color: #FDD6BA;
+    margin-bottom: 100px;
+    margin-left: 31px;
+}
+
+.instruction__item:nth-child(3) .instruction__number::before {
+    background-color: #ffffff;
 }
 
 .instruction__item + .instruction__item {
