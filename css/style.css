@@ -52,6 +52,17 @@ img {
     vertical-align: middle;
 }
 
+.visually_hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
 .container {
     width: 1320px;
     padding: 0 20px;
@@ -95,22 +106,21 @@ img {
     color: #333D4B;
 }
 
+/* main */
 
+/* cta section */
 
-
-/* 
-
-https://asrbek-cofferoaster.netlify.app/
-.cta {
+.cta__wrapper {
     background-image: url(../images/cta_bg_image.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 600px;
     color: #ffffff;
     padding: 117px 85px;
+    border-radius: 10px;
 }
 
-.cta_heading {
+.cta__heading {
     margin: 0;
     margin-bottom: 32px;
     width: 50%;
@@ -119,14 +129,14 @@ https://asrbek-cofferoaster.netlify.app/
     font-weight: 900;
 }
 
-.cta_paragraph {
+.cta__description {
     margin: 0;
     margin-bottom: 56px;
     width: 45%;
     color: #d0d1ce;
 }
 
-.cta_link {
+.cta__link {
     text-decoration: none;
     padding: 15px 31px;
     border-radius: 5px;
@@ -134,4 +144,253 @@ https://asrbek-cofferoaster.netlify.app/
     background-color: #0E8784;
     font-family: 'Fraunces';
     font-weight: 900;
-} */
+    transition: 0.2s ease;
+} 
+
+.cta__link:hover {
+    background-color: #66D2CF;
+    transition: 0.2s ease;
+}
+
+
+/* products section */
+
+.products__list {
+    padding: 0;
+    margin: 136px auto 200px auto;
+    list-style-type: none;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url("../images/products_bg_image.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.products__item {
+    margin-top: 150px;
+    width: 255px;
+    text-align: center;
+}
+
+.product__link {
+    text-decoration: none;
+}
+
+.product__image {
+    margin-bottom: 70px;
+}
+
+.product__name {
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.product__description {
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+    margin: 0;
+    padding: 0 10px;
+}
+
+/* because section */
+
+.because__wrapper {
+    background-color: #2C343E;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 100px 100px 0 100px;
+    height: 577px;
+    margin-bottom: 350px;
+}
+
+.because__heading {
+    font-family: 'Fraunces';
+    font-weight: 900;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.because__description {
+    text-align: center;
+    margin: 0;
+    width: 45%;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 86px;
+}
+
+.because__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.because__item {
+    width: 340px;
+    background-color: #0E8784;
+    border-radius: 8px;
+    padding: 72px 48px 48px 48px;
+}
+
+.because__item::before {
+    width: 72px;
+    height: 72px;
+    display: block;
+    content: "";
+    margin: 0 auto;
+    margin-bottom: 56px;
+}
+
+.because__item:nth-child(1)::before {
+    background-image: url("../images/because_icon_1.png");
+}
+
+.because__item:nth-child(2)::before {
+    background-image: url("../images/because_icon_2.png");
+}
+
+.because__item:nth-child(3)::before {
+    background-image: url("../images/because_icon_3.png");
+}
+
+.because__list__heading {
+    font-family: 'Fraunces';
+    font-weight: 900;
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.because__list__description {
+    text-align: center;
+}
+
+/* instructions section */
+
+
+.instruction__heading {
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 24px;
+    color: #83888F;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 95px;
+}
+
+.instruction__list {
+    list-style-type: none;
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+}
+
+.instruction__item {
+    width: 255px;
+}
+
+.instruction__item + .instruction__item {
+    margin-left: 95px;
+}
+
+.instruction__number {
+    color: #FDD6BA;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    margin: 0;
+    margin-bottom: 38px;
+}
+
+.instruction__list__heading {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+    margin-bottom: 42px;
+}
+
+.instuction__list_description {
+    font-size: 16px;
+    color: #333D4B;
+    margin: 0;
+}
+
+
+.instruction__link--margined {
+    margin-top: 76px;
+}
+
+/* footer */
+
+.footer__wrapper {
+    background-color: #2C343E;
+    padding: 47px 85px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__wrapper .nav {
+    margin-left: 100px;
+}
+
+.footer__wrapper .active_link {
+    color: #ffffff;
+}
+
+.footer__wrapper .nav__link:hover {
+    color: #ffffff;
+    transition: 0.2s ease;
+}
+
+.social__wrapper {
+    display: inline-block;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90px;
+    justify-content: space-between;
+}
+
+.fab.fa-instagram, .fab.fa-facebook-square, .fab.fa-twitter {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.fab.fa-instagram:hover, .fab.fa-facebook-square:hover, .fab.fa-twitter:hover {
+    color: #FDD6BA;
+}
+
+
+
+/* 
+
+https://asrbek-cofferoaster.netlify.app/
+*/
