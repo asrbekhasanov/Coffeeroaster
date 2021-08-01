@@ -1,0 +1,137 @@
+/* fraunces-regular - latin */
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/fraunces-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/fraunces-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+    url('../fonts/fraunces-v10-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/fraunces-v10-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* barlow-regular - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/barlow-v5-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/barlow-v5-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* barlow-700 - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('../fonts/barlow-v5-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/barlow-v5-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow';
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    margin: 43px auto;
+}
+
+.logo__link {
+    text-decoration: none;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav__list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item + .nav__item {
+    margin-left: 34px;
+}
+
+.nav__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #83888F;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav__link:hover, .active_link {
+    color: #333D4B;
+}
+
+
+
+
+/* 
+
+https://asrbek-cofferoaster.netlify.app/
+.cta {
+    background-image: url(../images/cta_bg_image.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 600px;
+    color: #ffffff;
+    padding: 117px 85px;
+}
+
+.cta_heading {
+    margin: 0;
+    margin-bottom: 32px;
+    width: 50%;
+    font-size: 72px;
+    font-family: 'Fraunces';
+    font-weight: 900;
+}
+
+.cta_paragraph {
+    margin: 0;
+    margin-bottom: 56px;
+    width: 45%;
+    color: #d0d1ce;
+}
+
+.cta_link {
+    text-decoration: none;
+    padding: 15px 31px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #0E8784;
+    font-family: 'Fraunces';
+    font-weight: 900;
+} */
