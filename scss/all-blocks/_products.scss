@@ -1,0 +1,46 @@
+
+.products__list {
+    padding: 0;
+    margin: 136px auto 200px auto;
+    list-style-type: none;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url("../images/products_bg_image.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.products__item {
+    margin-top: 150px;
+    width: 255px;
+    text-align: center;
+}
+
+.product__link {
+    text-decoration: none;
+}
+
+.product__image {
+    margin-bottom: 70px;
+}
+
+.product__name {
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.product__description {
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+    margin: 0;
+    padding: 0 10px;
+}

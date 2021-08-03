@@ -1,0 +1,87 @@
+
+
+.instruction__heading {
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 24px;
+    color: #83888F;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 95px;
+}
+
+.instruction__list {
+    list-style-type: none;
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+}
+
+.instruction__item {
+    width: 255px;
+
+    &::before {
+        width: 31px;
+        height: 31px;
+        display: inline-block;
+        content: '';
+        border: 2px solid #0E8784;
+        background-color: #ffffff;
+        border-radius: 50%;
+        margin-bottom: -19px;
+    }
+    
+}
+
+.instruction__number::before {
+    width: 130%;
+    height: 2px;
+    display: inline-block;
+    content: '';
+    background-color: #FDD6BA;
+    margin-bottom: 100px;
+    margin-left: 31px;
+}
+
+.instruction__item:nth-child(3) .instruction__number::before {
+    background-color: #ffffff;
+}
+
+.instruction__item + .instruction__item {
+    margin-left: 95px;
+}
+
+.instruction__number {
+    color: #FDD6BA;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    margin: 0;
+    margin-bottom: 38px;
+}
+
+.instruction__list__heading {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+    margin-bottom: 42px;
+}
+
+.instuction__list_description {
+    font-size: 16px;
+    color: #333D4B;
+    margin: 0;
+}
+
+
+.instruction__link--margined {
+    margin-top: 76px;
+}
