@@ -1,0 +1,22 @@
+.planning__cta__wrapper--bg {
+    background-image: url('../images/planning_cta_bg.png');
+    height: 450px;
+    margin-bottom: 168px;
+}
+
+.planning__instruction--bg {
+    background-color: #2C343E;
+    color: #ffffff;
+    padding: 91px 85px;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.instruction__item:nth-child(3) .planning__instruction__item--no-before::before {
+    background-color: #2C343E;
+}
+
+.planning__instruction__heading--white {
+    color: #ffffff;
+}
