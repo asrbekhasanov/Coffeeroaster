@@ -32,8 +32,8 @@
             </nav>
         </div>
     </header>
-
-
+    
+    
     <main class="main">
         <main class="main">
             <section class="cta">
@@ -45,7 +45,7 @@
                 </div>
             </section>
             
-    
+            
             <section class="instuction">
                 <div class="container">
                     <ol class="instruction__list planning__instruction--bg">
@@ -67,10 +67,198 @@
                     </ol>
                 </div>
             </section>
+            
+            <section class="types">
+                <div class="container">
+                    <div class="types__wrapper">
+                        <ol class="types__left__list">
+                            <li class="types__left__item">
+                                <a class="types__left__item__link" href="#">
+                                    <span>01</span> Preferences
+                                </a>
+                            </li>
+                            <li class="types__left__item">
+                                <a class="types__left__item__link" href="#">
+                                    <span>02</span> Bean Type
+                                </a>
+                            </li>
+                            <li class="types__left__item">
+                                <a class="types__left__item__link" href="#">
+                                    <span>03</span> Quantity
+                                </a>
+                            </li>
+                            <li class="types__left__item">
+                                <a class="types__left__item__link" href="#">
+                                    <span>04</span> Grind Option
+                                </a>
+                            </li>
+                            <li class="types__left__item">
+                                <a class="types__left__item__link" href="#">
+                                    <span>05</span> Deliveries
+                                </a>
+                            </li>
+                        </ol>
+                        
+                        <form class="planning_form" action="#" method="POST">
+                            <div class="planning__radio__wrapper">
+                                <h3 class="types__choice__heading">How do you drink your coffee?</h3>
+                                <a class="types__choice__dropdown__link" href="#types__bean__dropdown">
+                                    <i class="fas fa-chevron-up"></i>
+                                </a>
+                                <div id="types__bean__dropdown" class="types__choice__dropdown">
+                                    <label class="labeljon">
+                                        <input type="radio" name="user_choice">
+                                        <span class="checked">
+                                            <span>Capsule</span>
+                                            Compatible with Nespresso systems and similar brewers
+                                        </span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="user_choice">
+                                        <span class="checked">
+                                            <span>Filter</span>
+                                            For pour over or drip methods like Aeropress, Chemex, and V60
+                                        </span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="user_choice">
+                                        <span class="checked">
+                                            <span>Espresso</span>
+                                            Dense and finely ground beans for an intense, flavorful experience
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="planning__radio__wrapper">
+                                <h3 class="types__choice__heading">What type of coffee?</h3>
+                                <a class="types__choice__dropdown__link" href="#types__quantity__dropdown">
+                                    <i class="fas fa-chevron-up"></i>
+                                </a>
+                                <div id="types__quantity__dropdown" class="types__choice__dropdown">
+                                    <label>
+                                        <input type="radio" name="user_type">
+                                        <span class="checked">
+                                            <span>Single Origin</span>
+                                            Distinct, high quality coffee from a specific family-owned farm
+                                        </span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="user_type">
+                                        <span class="checked">
+                                            <span>Blended</span>
+                                            Just like regular coffee, except the caffeine has been removed
+                                        </span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="user_type">
+                                        <span class="checked">
+                                            <span>Espresso</span>
+                                            Combination of two or three dark roasted beans of organic coffees
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="planning__radio__wrapper">
+                                <h3 class="types__choice__heading">How much would you like?</h3>
+                                <a class="types__choice__dropdown__link" href="#types__grinding__dropdown">
+                                    <i class="fas fa-chevron-up"></i>
+                                </a>
+                                <div id="types__grinding__dropdown" class="types__choice__dropdown">
+                                    <label>
+                                        <input type="radio" name="user_gramm">
+                                        <span class="checked">
+                                            <span>250g</span>
+                                            Perfect for the solo drinker. Yields about 12 delicious cups.
+                                        </span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="user_gramm">
+                                        <span class="checked">
+                                            <span>500g</span>
+                                            Perfect option for a couple. Yields about 40 delectable cups.
+                                        </span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="user_gramm">
+                                        <span class="checked">
+                                            <span>1000g</span>
+                                            Perfect for offices and events. Yields about 90 delightful cups.
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="planning__radio__wrapper">
+                                <h3 class="types__choice__heading">Want us to grind them?</h3>
+                                <a class="types__choice__dropdown__link" href="#types__choice__dropdown">
+                                    <i class="fas fa-chevron-up"></i>
+                                </a>
+                                <div id="types__choice__dropdown" class="types__choice__dropdown">
+                                    <label>
+                                        <input type="radio" name="user_grind">
+                                        <span class="checked">
+                                            <span>Wholebean</span>
+                                            Best choice if you cherish the full sensory experience
+                                        </span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="user_grind">
+                                        <span class="checked">
+                                            <span>Filter</span>
+                                            For drip or pour-over coffee methods such as V60 or Aeropress
+                                        </span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="user_grind">
+                                        <span class="checked">
+                                            <span>Cafetiére</span>
+                                            Course ground beans specially suited for french press coffee
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="planning__radio__wrapper">
+                                <h3 class="types__choice__heading">How often should we deliver?</h3>
+                                <a class="types__choice__dropdown__link" href="#types__deliver__dropdown">
+                                    <i class="fas fa-chevron-up"></i>
+                                </a>
+                                <div id="types__deliver__dropdown" class="types__choice__dropdown">
+                                    <label>
+                                        <input type="radio" name="user_cost">
+                                        <span class="checked">
+                                            <span>Every week</span>
+                                            $7.20 per shipment. Includes free first-class shipping.
+                                        </span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="user_cost">
+                                        <span class="checked">
+                                            <span>Every 2 weeks</span>
+                                            $9.60 per shipment. Includes free priority shipping.
+                                        </span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="user_cost">
+                                        <span class="checked">
+                                            <span>Every month</span>
+                                            $12.00 per shipment. Includes free priority shipping.
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="summary">
+                                ORDER SUMMARY <p class="order__summary">“I drink my coffee as <span>Filter</span>, with a <span>Decaf</span> type of bean. <span>250g</span> ground ala <span>Cafetiére</span>, sent to me <span>Every Week</span>.”</p>
+                            </div>
+
+                            <a class="cta__link planning__form__button--right" href="#">Create your plan</a>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </main>
     </main>
-
-
+    
+    
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">

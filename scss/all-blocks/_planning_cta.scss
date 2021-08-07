@@ -1,3 +1,7 @@
+.types {
+    padding-bottom: 168px;
+}
+
 .planning__cta__wrapper--bg {
     background-image: url('../images/planning_cta_bg.png');
     height: 450px;
@@ -10,7 +14,6 @@
     padding: 91px 85px;
     width: 100%;
     border-radius: 10px;
-
 }
 
 .instruction__item:nth-child(3) .planning__instruction__item--no-before::before {
@@ -19,4 +22,124 @@
 
 .planning__instruction__heading--white {
     color: #ffffff;
+}
+
+.types__wrapper {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.types__left__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 20%;
+}
+
+.types__left__item__link {
+    text-decoration: none;
+    color: #83888F;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 49px;
+    display: inline-block;
+}
+
+.planning_form {
+    width: 70%;
+}
+
+.types__choice__heading {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888F;
+    display: inline-block;
+    margin: 0;
+    margin-right: 80px;
+    margin-bottom: 58px;
+}
+
+.types__choice__dropdown__link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.fas.fa-chevron-up {
+    display: inline-block;
+    font-size: 20px;
+    color: #0E8784;
+}
+
+.types__choice__dropdown {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    & .checked {
+        width: 228px;
+        height: 250px;
+        background-color: #F4F1EB;
+        border-radius: 10px;
+        padding: 32px 25px;
+        margin: 0 0 88px 0;
+        color: #333D4B;
+        display: inline-block;
+        line-height: 26px;
+    }
+    
+    & input {
+        display: none;
+    }
+    
+    & .checked span{
+        font-family: 'Fraunces';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;        
+        display: block;
+        margin-bottom: 24px;
+    }
+    
+    & input:checked ~ .checked {
+        background-color: #0E8784;
+        color: #ffffff;
+    }
+    
+}
+
+
+.summary {
+    background-color: #2C343E;
+    padding: 27px 64px;
+    margin-bottom: 40px;
+    color: #83888F;
+}
+
+.order__summary {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 60px;
+    color: #FFFFFF;
+
+    & span {
+        color: #0E8784;
+    }
+}
+
+.planning__form__button--right {
+    display: block;
+    width: 217px;
+    margin-left: auto;
+    text-align: center;
 }
