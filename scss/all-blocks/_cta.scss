@@ -1,11 +1,12 @@
 .cta__wrapper {
     background-image: url('../images/cta_bg_image.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 600px;
+    background-position: center center;
     color: #ffffff;
     padding: 117px 85px;
     border-radius: 10px;
+    background-color: #464646;
 }
 
 .cta__heading {
@@ -33,9 +34,67 @@
     font-family: 'Fraunces';
     font-weight: 900;
     transition: 0.2s ease;
-
+    display: block;
+    width: 217px;
+    text-align: center;
+    
     &:hover {
         background-color: #66D2CF;
         transition: 0.2s ease;
     }
 } 
+
+@media only screen and (max-width: 1100px) {
+    .cta__heading {
+        font-size: 60px;
+        line-height: 60px;
+        width: 60%;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .cta__wrapper {
+        padding: 104px 58px;
+        height: auto;
+    }
+    
+    .cta__heading {
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 24px;
+        width: 60%;
+    }
+    
+    .cta__description {
+        margin-bottom: 56px;
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 565px) {
+    .cta__wrapper {
+        padding: 100px 24px;
+        height: auto;
+    }
+    
+    .cta__heading {
+        width: 100%;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .cta__description {
+        text-align: center;
+        width: 100%;
+    }
+
+    .cta__link {
+        margin: 0 auto;
+    }
+}
