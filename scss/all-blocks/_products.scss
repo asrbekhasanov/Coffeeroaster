@@ -1,16 +1,17 @@
 
 .products__list {
     padding: 0;
-    margin: 136px auto 200px auto;
+    padding: 136px 0 200px 0;
+    margin: 0 auto;
     list-style-type: none;
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     background-image: url("../images/products_bg_image.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: 50% 10%;
 }
 
 .products__item {
@@ -44,3 +45,105 @@
     margin: 0;
     padding: 0 10px;
 }
+
+@media only screen and (max-width: 1000px) {
+    .products__item {
+        width: 100%;
+    }
+
+    .product__link {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .product__image {
+        width: 255px;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .product__item__wrapper {
+        width: 60%;
+    }
+
+    .product__name, .product__description {
+        text-align: left;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .product__item__wrapper {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .product__item__wrapper {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .product__item__wrapper {
+        width: 100%;
+    }
+
+    .product__link {
+        justify-content: center;
+    }
+
+    .product__name, .product__description {
+        text-align: center;
+    }
+}
+
+
+
+// @media only screen and (max-width: 900px) {
+//     .cta__wrapper {
+//         padding: 104px 58px;
+//         height: auto;
+//     }
+    
+//     .cta__heading {
+//         font-size: 48px;
+//         font-style: normal;
+//         font-weight: 900;
+//         font-size: 40px;
+//         line-height: 40px;
+//         margin-bottom: 24px;
+//         width: 60%;
+//     }
+    
+//     .cta__description {
+//         margin-bottom: 56px;
+//         font-size: 15px;
+//         margin-bottom: 40px;
+//     }
+// }
+
+// @media only screen and (max-width: 565px) {
+//     .cta__wrapper {
+//         padding: 100px 24px;
+//         height: auto;
+//     }
+    
+//     .cta__heading {
+//         width: 100%;
+//         font-size: 40px;
+//         line-height: 40px;
+//         text-align: center;
+//     }
+
+//     .cta__description {
+//         text-align: center;
+//         width: 100%;
+//     }
+
+//     .cta__link {
+//         margin: 0 auto;
+//     }
+// }
