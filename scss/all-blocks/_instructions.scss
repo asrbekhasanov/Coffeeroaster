@@ -21,7 +21,7 @@
 }
 
 .instruction__item {
-    width: 255px;
+    width: 32%;
 
     &::before {
         width: 31px;
@@ -74,7 +74,7 @@
     margin-bottom: 42px;
 }
 
-.instuction__list_description {
+.instuction__list__description {
     font-size: 16px;
     color: #333D4B;
     margin: 0;
@@ -83,4 +83,63 @@
 
 .instruction__link--margined {
     margin-top: 76px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .instruction__item + .instruction__item {
+        margin-left: 10px;
+    }
+
+    .instruction__list {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .instruction {
+        padding-top: 150px;
+    }
+}
+
+
+@media only screen and (max-width: 540px) {
+
+    .instruction__number::before, .instruction__item::before {
+        display: none;
+    }
+    
+    
+    .instruction__item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .instruction__list .instruction__link--margined {
+        display: block;
+        margin: 76px auto 0 auto;
+    }
+
+    .instruction__item + .instruction__item {
+        margin-left: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .instruction {
+        padding-top: 200px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .instruction {
+        padding-top: 250px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .instruction {
+        padding-top: 300px;
+    }
 }
