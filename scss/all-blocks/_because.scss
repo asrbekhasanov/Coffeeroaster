@@ -20,7 +20,7 @@
 .because__description {
     text-align: center;
     margin: 0;
-    width: 45%;
+    width: 75%;
     margin: 0 auto;
     font-size: 16px;
     line-height: 26px;
@@ -38,7 +38,7 @@
 }
 
 .because__item {
-    width: 340px;
+    max-width: 340px;
     background-color: #0E8784;
     border-radius: 8px;
     padding: 72px 48px 48px 48px;
@@ -50,6 +50,7 @@
         content: "";
         margin: 0 auto;
         margin-bottom: 56px;
+        flex-shrink: 0;
     }
 
     &:nth-child(1)::before {
@@ -62,6 +63,7 @@
     
     &:nth-child(3)::before {
         background-image: url("../images/because_icon_3.png");
+        background-repeat: no-repeat;
     }
     
 }
@@ -78,4 +80,95 @@
 .because__list__description {
     text-align: center;
     margin: 0;
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .because__wrapper {
+        padding: 80px 80px 0 80px;
+    }
+
+    // .because__description {
+    //     width: 75%;
+    // }
+
+    .because__item {
+        padding: 72px 28px 48px 28px;
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .because__wrapper {
+        padding: 70px 70px 0 70px;
+    }
+
+    .because__item {
+        padding: 41px 70px;
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .because__item + .because__item {
+        margin-top: 24px;
+    }
+
+    .because__wrapper {
+        height: 700px;
+    }
+
+    .because__item::before {
+        margin-bottom: 0;
+        display: inline-block;
+    }
+
+    .because__list__heading, .because__list__description {
+        text-align: left;
+    }
+
+    .because__item__wrapper {
+        margin-left: 20px;
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .because__wrapper {
+        padding: 57px 57px 0 57px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .because__wrapper {
+        height: 1150px;
+    }
+
+    .because__wrapper {
+        padding: 64px 24px 0 24px;
+    }
+
+    .because__item {
+        display: block;
+        padding: 72px 33px 51px 33px;
+    }
+
+    .because__item::before {
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        margin-bottom: 56px;
+        display: block;
+    }
+
+    .because__item__wrapper {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .because__list__heading, .because__list__description {
+        text-align: center;
+    }
+
 }
