@@ -50,7 +50,7 @@
 }
 
 .instruction__item + .instruction__item {
-    margin-left: 95px;
+    margin-left: 10px;
 }
 
 .instruction__number {
@@ -85,7 +85,7 @@
     margin-top: 76px;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1320px) {
     .instruction__item + .instruction__item {
         margin-left: 10px;
     }
